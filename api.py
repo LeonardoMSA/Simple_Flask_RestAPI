@@ -40,7 +40,7 @@ class BrandNames(Resource):
 
 class AllBrands(Resource):
 
-    @jwt_required
+    @jwt_required()
     def get(self):
         return {'brands':brands}
 
